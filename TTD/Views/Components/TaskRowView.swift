@@ -33,7 +33,7 @@ struct TaskRowView: View {
             Text(task.title)
                 .font(.body)
                 .foregroundStyle(task.isCompleted ? .tertiary : .primary)
-                .strikethrough(task.isCompleted, color: .tertiary)
+                .strikethrough(task.isCompleted, color: Color(.tertiaryLabel))
                 .animation(.taskSpring, value: task.isCompleted)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
